@@ -1,0 +1,179 @@
+{
+  "nav": {
+    "services": "Servicios",
+    "about": "Nosotros",
+    "faq": "Preguntas",
+    "contact": "Contacto",
+    "bookAppointment": "Agendar Cita"
+  },
+  "hero": {
+    "badge": "Bienvenido a Digits Financial Group",
+    "headline": "Tus Finanzas,",
+    "headlineAccent": "Simplificadas.",
+    "subtext": "Preparación de impuestos, contabilidad y servicios financieros para residentes de Miami y pequeños negocios. Confiables, bilingües y siempre de tu lado.",
+    "ctaBook": "Agendar Cita",
+    "ctaCall": "Llámanos",
+    "socialProof": "Con la confianza de más de 500 clientes en Miami"
+  },
+  "stats": {
+    "customers": "Clientes Satisfechos",
+    "savings": "Ahorro Promedio en Impuestos",
+    "years": "Años en Miami",
+    "entities": "Entidades Creadas"
+  },
+  "services": {
+    "sectionTitle": "Servicios Integrales",
+    "sectionSubtext": "Todo lo que necesitas para administrar tus finanzas personales y empresariales bajo un mismo techo.",
+    "learnMore": "Más información",
+    "items": {
+      "taxPrep": {
+        "title": "Preparación de Impuestos",
+        "description": "Declaraciones precisas y sin estrés para individuos y empresas. Maximiza tus devoluciones legalmente.",
+        "category": "Financiero"
+      },
+      "bookkeeping": {
+        "title": "Contabilidad",
+        "description": "Mantén las finanzas de tu negocio organizadas y listas para la temporada de impuestos. Informes mensuales y trimestrales.",
+        "category": "Financiero"
+      },
+      "creditRepair": {
+        "title": "Reparación de Crédito",
+        "description": "Proceso estratégico de disputa para eliminar elementos negativos inexactos y mejorar tu puntaje de crédito.",
+        "category": "Financiero"
+      },
+      "lineOfCredit": {
+        "title": "Líneas de Crédito",
+        "description": "Accede a capital para hacer crecer tu negocio o administrar el flujo de caja con tasas competitivas.",
+        "category": "Financiero"
+      },
+      "entityCreation": {
+        "title": "Creación de Entidades",
+        "description": "Formación de LLC, S-Corp o C-Corp. Nosotros manejamos el papeleo para que tú te concentres en construir.",
+        "category": "Negocios y Legal"
+      },
+      "lifeInsurance": {
+        "title": "Seguro de Vida",
+        "description": "Protege el futuro de tu familia con pólizas de seguro de vida a término, completo o universal.",
+        "category": "Negocios y Legal"
+      },
+      "notary": {
+        "title": "Notario Público",
+        "description": "Notarización rápida y confiable para tus documentos legales y financieros importantes.",
+        "category": "Negocios y Legal"
+      }
+    }
+  },
+  "about": {
+    "sectionTitle": "Una firma local con experiencia institucional.",
+    "body": "En Digits Financial Group creemos que la orientación financiera experta no debe estar reservada para las grandes corporaciones. Llevamos la precisión de Wall Street al Miami cotidiano, ofreciendo un servicio bilingüe y personalizado a cada cliente que pasa por nuestras puertas.",
+    "mission": {
+      "title": "Nuestra Misión",
+      "body": "Empoderar a nuestra comunidad a través de la educación financiera, informes precisos y planificación estratégica que construya riqueza generacional."
+    },
+    "vision": {
+      "title": "Nuestra Visión",
+      "body": "Ser el socio financiero más confiable para pequeñas empresas y familias en el sur de Florida."
+    },
+    "yearsLabel": "Años sirviendo a la comunidad de Miami con integridad."
+  },
+  "taxesToGo": {
+    "badge": "App Móvil Disponible",
+    "title": "Declara desde cualquier lugar con TaxesToGo™",
+    "body": "Olvídate de la visita a la oficina. Sube tus documentos de forma segura, chatea con tu preparador de impuestos y firma tu declaración desde tu teléfono.",
+    "features": [
+      "Escaneo y carga segura de documentos",
+      "Mensajería directa con tu preparador",
+      "Firmas electrónicas seguras",
+      "Seguimiento del estado de tu reembolso"
+    ],
+    "getAppBtn": "Obtener la App"
+  },
+  "faq": {
+    "sectionTitle": "Preguntas Frecuentes",
+    "sectionSubtext": "Respuestas claras para ayudarte a tomar decisiones informadas.",
+    "items": [
+      {
+        "q": "¿Qué documentos necesito para la preparación de impuestos?",
+        "a": "Para individuos, traiga sus W-2, 1099, la declaración del año anterior e identificación. Para empresas, necesitaremos su estado de pérdidas y ganancias, balance general y declaraciones anteriores. Le enviaremos una lista detallada al hacer su cita."
+      },
+      {
+        "q": "¿Hablan español?",
+        "a": "¡Sí! Todo nuestro equipo es completamente bilingüe. Podemos atenderle, explicarle sus documentos y responder sus preguntas en español."
+      },
+      {
+        "q": "¿Cuánto tiempo toma la reparación de crédito?",
+        "a": "La reparación de crédito es un proceso, no una solución inmediata. La mayoría de los clientes comienzan a ver cambios en 30-45 días, pero un programa completo suele tardar entre 3 y 6 meses según la complejidad de su perfil crediticio."
+      },
+      {
+        "q": "¿Necesito cita o aceptan personas sin cita?",
+        "a": "Aceptamos clientes sin cita, pero recomendamos encarecidamente agendar una cita para evitar esperas. Durante la temporada de impuestos (ene-abr), las citas son muy recomendables."
+      },
+      {
+        "q": "¿Pueden ayudarme a crear una LLC?",
+        "a": "Sí, manejamos todo el proceso de creación de entidades: presentación ante el estado, obtención del EIN con el IRS y redacción del acuerdo operativo."
+      }
+    ]
+  },
+  "appointment": {
+    "sectionTitle": "Reserve su consulta",
+    "sectionSubtext": "Dé el primer paso hacia la claridad financiera. Complete el formulario y confirmaremos su cita en breve.",
+    "officeLocation": "Ubicación de la Oficina",
+    "officeHours": "Horario de Oficina",
+    "hours": "Lun-Vie: 10am - 10pm\nSáb: 9am - 10pm\nDom: 9am - 5pm",
+    "seHablaEspanol": "Se habla Español",
+    "form": {
+      "firstName": "Nombre",
+      "lastName": "Apellido",
+      "email": "Correo Electrónico",
+      "phone": "Número de Teléfono",
+      "service": "Servicio Requerido",
+      "selectService": "Seleccione un servicio...",
+      "preferredDate": "Fecha Preferida",
+      "preferredTime": "Hora Preferida",
+      "message": "Mensaje (Opcional)",
+      "messagePlaceholder": "¿Cómo podemos ayudarle?",
+      "submit": "Solicitar Cita",
+      "submitting": "Enviando...",
+      "successTitle": "¡Solicitud recibida!",
+      "successBody": "Le confirmaremos su cita por correo electrónico en breve.",
+      "services": {
+        "taxPrep": "Preparación de Impuestos",
+        "bookkeeping": "Contabilidad",
+        "creditRepair": "Reparación de Crédito",
+        "lineOfCredit": "Líneas de Crédito",
+        "entityCreation": "Creación de Entidades",
+        "lifeInsurance": "Seguro de Vida",
+        "notary": "Notario Público"
+      }
+    }
+  },
+  "footer": {
+    "tagline": "Servicios financieros expertos para residentes y empresas de Miami. Confianza, integridad y precisión.",
+    "seHablaEspanol": "Se habla Español",
+    "servicesTitle": "Servicios",
+    "companyTitle": "Empresa",
+    "contactTitle": "Contacto",
+    "links": {
+      "about": "Sobre Nosotros",
+      "faq": "Preguntas Frecuentes",
+      "bookAppointment": "Agendar Cita",
+      "privacyPolicy": "Política de Privacidad",
+      "terms": "Términos de Servicio"
+    },
+    "copyright": "© {{year}} Digits Financial Group. Todos los derechos reservados.",
+    "poweredBy": "Desarrollado por viv53.com"
+  },
+  "openService": {
+    "badge": "Disponibles Ahora",
+    "headline": "¿Tienes una Pregunta Financiera?",
+    "subtext": "Comunícate directamente — nuestro equipo está listo para ayudarte con impuestos, contabilidad, crédito o cualquier necesidad financiera. Sin cita previa.",
+    "cta": "Llámanos"
+  },
+  "cookie": {
+    "message": "Usamos cookies para mejorar su experiencia de navegación y analizar nuestro tráfico. Al continuar usando nuestro sitio, consiente nuestra",
+    "cookiePolicy": "Política de Cookies",
+    "dataPolicy": "Política de Datos",
+    "acceptAll": "Aceptar Todo",
+    "decline": "Rechazar"
+  }
+}

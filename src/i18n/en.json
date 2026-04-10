@@ -1,0 +1,179 @@
+{
+  "nav": {
+    "services": "Services",
+    "about": "About",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "bookAppointment": "Book Appointment"
+  },
+  "hero": {
+    "badge": "Welcome to Digits Financial Group",
+    "headline": "Your Finances,",
+    "headlineAccent": "Simplified.",
+    "subtext": "Expert tax preparation, bookkeeping, and financial services for Miami residents and small business owners. Trustworthy, bilingual, and always in your corner.",
+    "ctaBook": "Book Appointment",
+    "ctaCall": "Call Us",
+    "socialProof": "Trusted by 500+ Miami locals"
+  },
+  "stats": {
+    "customers": "Happy Customers",
+    "savings": "Avg. Tax Savings",
+    "years": "Years in Miami",
+    "entities": "Entities Created"
+  },
+  "services": {
+    "sectionTitle": "Comprehensive Services",
+    "sectionSubtext": "Everything you need to manage your personal and business finances under one roof.",
+    "learnMore": "Learn more",
+    "items": {
+      "taxPrep": {
+        "title": "Tax Preparation",
+        "description": "Accurate, stress-free tax filing for individuals and businesses. Maximize your returns legally.",
+        "category": "Financial"
+      },
+      "bookkeeping": {
+        "title": "Bookkeeping",
+        "description": "Keep your business finances organized and ready for tax season. Monthly and quarterly reporting.",
+        "category": "Financial"
+      },
+      "creditRepair": {
+        "title": "Credit Repair",
+        "description": "Strategic dispute process to remove inaccurate negative items and boost your credit score.",
+        "category": "Financial"
+      },
+      "lineOfCredit": {
+        "title": "Lines of Credit",
+        "description": "Access capital to grow your business or manage cash flow with competitive rates.",
+        "category": "Financial"
+      },
+      "entityCreation": {
+        "title": "Entity Creation",
+        "description": "LLC, S-Corp, or C-Corp formation. We handle the paperwork so you can focus on building.",
+        "category": "Business & Legal"
+      },
+      "lifeInsurance": {
+        "title": "Life Insurance",
+        "description": "Protect your family's future with term, whole, or universal life insurance policies.",
+        "category": "Business & Legal"
+      },
+      "notary": {
+        "title": "Public Notary",
+        "description": "Fast, reliable notarization for your important legal and financial documents.",
+        "category": "Business & Legal"
+      }
+    }
+  },
+  "about": {
+    "sectionTitle": "A neighborhood firm with institutional expertise.",
+    "body": "At Digits Financial Group, we believe that expert financial guidance shouldn't be reserved for large corporations. We bring Wall Street precision to Main Street Miami, offering bilingual, personalized service to every client who walks through our doors.",
+    "mission": {
+      "title": "Our Mission",
+      "body": "To empower our community through financial literacy, accurate reporting, and strategic planning that builds generational wealth."
+    },
+    "vision": {
+      "title": "Our Vision",
+      "body": "To be the most trusted financial partner for small businesses and families in South Florida."
+    },
+    "yearsLabel": "Years serving the Miami community with integrity."
+  },
+  "taxesToGo": {
+    "badge": "Mobile App Available",
+    "title": "File from anywhere with TaxesToGo™",
+    "body": "Skip the office visit. Securely upload your documents, chat with your tax preparer, and sign your return right from your phone.",
+    "features": [
+      "Secure document scanning & upload",
+      "Direct messaging with your preparer",
+      "Secure e-signatures",
+      "Track your refund status"
+    ],
+    "getAppBtn": "Get the App"
+  },
+  "faq": {
+    "sectionTitle": "Frequently Asked Questions",
+    "sectionSubtext": "Clear answers to help you make informed decisions.",
+    "items": [
+      {
+        "q": "What documents do I need to bring for tax preparation?",
+        "a": "For individuals, please bring your W-2s, 1099s, last year's tax return, and ID. For businesses, we'll need your P&L statement, balance sheet, and previous returns. We'll provide a detailed checklist when you book."
+      },
+      {
+        "q": "Do you speak Spanish?",
+        "a": "Yes! Our entire team is fully bilingual. We can assist you, explain your documents, and answer your questions in Spanish."
+      },
+      {
+        "q": "How long does credit repair take?",
+        "a": "Credit repair is a process, not an overnight fix. Most clients start seeing changes within 30-45 days, but a complete program typically takes 3-6 months depending on the complexity of your credit profile."
+      },
+      {
+        "q": "Do I need an appointment or do you take walk-ins?",
+        "a": "We accept walk-ins, but we highly recommend booking an appointment to ensure you don't have to wait. During tax season (Jan-April), appointments are strongly encouraged."
+      },
+      {
+        "q": "Can you help me set up an LLC?",
+        "a": "Yes, we handle the complete entity creation process, including state filing, obtaining your EIN from the IRS, and providing your operating agreement."
+      }
+    ]
+  },
+  "appointment": {
+    "sectionTitle": "Book your consultation",
+    "sectionSubtext": "Take the first step towards financial clarity. Fill out the form and we'll confirm your appointment shortly.",
+    "officeLocation": "Office Location",
+    "officeHours": "Office Hours",
+    "hours": "Mon-Fri: 10am - 10pm\nSat: 9am - 10pm\nSun: 9am - 5pm",
+    "seHablaEspanol": "Se habla Español",
+    "form": {
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "service": "Service Needed",
+      "selectService": "Select a service...",
+      "preferredDate": "Preferred Date",
+      "preferredTime": "Preferred Time",
+      "message": "Message (Optional)",
+      "messagePlaceholder": "How can we help you?",
+      "submit": "Request Appointment",
+      "submitting": "Sending...",
+      "successTitle": "Request received!",
+      "successBody": "We'll confirm your appointment via email shortly.",
+      "services": {
+        "taxPrep": "Tax Preparation",
+        "bookkeeping": "Bookkeeping",
+        "creditRepair": "Credit Repair",
+        "lineOfCredit": "Lines of Credit",
+        "entityCreation": "Entity Creation",
+        "lifeInsurance": "Life Insurance",
+        "notary": "Public Notary"
+      }
+    }
+  },
+  "footer": {
+    "tagline": "Expert financial services for Miami residents and businesses. Trust, integrity, and precision.",
+    "seHablaEspanol": "Se habla Español",
+    "servicesTitle": "Services",
+    "companyTitle": "Company",
+    "contactTitle": "Contact",
+    "links": {
+      "about": "About Us",
+      "faq": "FAQ",
+      "bookAppointment": "Book Appointment",
+      "privacyPolicy": "Privacy Policy",
+      "terms": "Terms of Service"
+    },
+    "copyright": "© {{year}} Digits Financial Group. All rights reserved.",
+    "poweredBy": "Powered by viv53.com"
+  },
+  "openService": {
+    "badge": "Available Now",
+    "headline": "Got a Financial Question?",
+    "subtext": "Reach out directly — our team is ready to help with taxes, bookkeeping, credit, or any financial need. No appointment required.",
+    "cta": "Call Now"
+  },
+  "cookie": {
+    "message": "We use cookies to enhance your browsing experience and analyze our traffic. By continuing to use our site, you consent to our",
+    "cookiePolicy": "Cookie Policy",
+    "dataPolicy": "Data Policy",
+    "acceptAll": "Accept All",
+    "decline": "Decline"
+  }
+}

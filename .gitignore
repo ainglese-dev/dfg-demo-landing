@@ -1,0 +1,21 @@
+draft-digits-financial-group/
+
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+build/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Editor
+.DS_Store
+*.log
+
+# Cache
+.vite/
+hero-dfg-background.mp4
