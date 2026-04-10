@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, type ReactNode } from 'react';
 import { X } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 
@@ -14,7 +14,7 @@ const COMPANY = 'Digits Financial Group';
 const EMAIL = 'info@digitsfinancial.tax';
 const ADDRESS = '18425 NW 2nd Ave, Suite 403, Miami, FL 33169';
 
-const policies: Record<Exclude<PolicyType, null>, { title: string; content: JSX.Element }> = {
+const policies: Record<Exclude<PolicyType, null>, { title: string; content: ReactNode }> = {
   cookie: {
     title: 'Cookie Policy',
     content: (
