@@ -1,0 +1,17 @@
+# Copy this file to .dev.vars and fill in values for local development.
+# Never commit .dev.vars — it is gitignored.
+
+# Cloudflare Turnstile secret key (get from CF Dashboard → Turnstile → your site)
+# For local testing, use the always-passes test secret: 1x0000000000000000000000000000000AA
+TURNSTILE_SECRET_KEY=
+
+# CF Access JWT audience tag (Application AUD from CF Zero Trust dashboard).
+# Required in production; leave blank locally and set DEBUG=1 instead.
+CF_ACCESS_AUD=
+
+# Set DEBUG=1 to bypass CF Access JWT verification during local development.
+# Must be "0" or unset in production.
+DEBUG=1
+
+# D1 database is handled automatically by wrangler for local dev (no secret needed here)
+# The VITE_TURNSTILE_SITE_KEY public key goes in .env (committed), not here

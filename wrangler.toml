@@ -1,0 +1,24 @@
+name = "dfg-demo-landing"
+main = "worker/index.ts"
+compatibility_date = "2025-04-10"
+
+[assets]
+directory = "./dist"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "dfg-booking"
+database_id = "cb0879ae-e8ae-4877-94b7-458e1a14e8ef"
+
+[[send_email]]
+name = "EMAIL"
+
+[vars]
+ADMIN_URL = "https://dfg-demo-landing.pages.dev/admin"
+EMAIL_FROM = "bookings@vivnotify.com"
+EMAIL_FROM_NAME = "DFG Booking"
+CF_ACCESS_LOGOUT_URL = "https://viv53dev.cloudflareaccess.com/cdn-cgi/access/logout"
+CF_ACCESS_TEAM = "viv53dev"
+DEBUG = "0"
+# CF_ACCESS_AUD is set per-environment via `wrangler secret put` (production)
+# or `.dev.vars` (local). Leave unset here so local dev uses DEBUG=1 instead.

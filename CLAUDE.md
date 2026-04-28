@@ -35,21 +35,85 @@ Plus 3 floating elements: `WhatsAppButton`, `ScrollToTop`, `CookieConsent`.
 
 | Layer | Choice |
 |-------|--------|
-| Framework | React + Vite |
+| Framework | React 19 + Vite 6 |
 | Package manager | pnpm |
-| Styling | Tailwind CSS + shadcn/ui |
+| Styling | Tailwind CSS v4 + shadcn/ui |
 | i18n | react-i18next (`src/i18n/en.json`, `src/i18n/es.json`) |
-| Hosting | Cloudflare Pages |
-| Appointments backend | Cloudflare Worker (`POST /api/appointments`) |
-| Email | Gmail API via CF Worker (OAuth2) |
+| Hosting | Cloudflare Pages (`dfg-demo-landing` project, production branch: `main`) |
+| Backend | CF Pages Functions (`functions/` directory — same runtime as Workers) |
+| Database | Cloudflare D1 (`dfg-booking`, binding `DB`) |
+| Email | CF Email Workers (`send_email` binding `EMAIL`, from `bookings@vivnotify.com`) |
+| CAPTCHA | Cloudflare Turnstile (site key: `VITE_TURNSTILE_SITE_KEY`, secret: CF Pages secret) |
+| Admin auth | CF Zero Trust / CF Access protecting `/admin*` |
+
+### Deployment
+
+```bash
+pnpm deploy    # pnpm build && wrangler pages deploy dist
+```
+
+`wrangler.toml` at project root — `functions/` is picked up automatically. Secrets set via `wrangler pages secret put`, never in files. Local secrets in `.dev.vars` (gitignored; template at `.dev.vars.example`).
+
+### wrangler.toml Bindings
+
+```toml
+name = "dfg-demo-landing"
+pages_build_output_dir = "dist"
+compatibility_date = "2025-04-10"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "dfg-booking"
+database_id = "..."  # wrangler d1 create dfg-booking
+
+[[send_email]]
+name = "EMAIL"
+```
 
 ### i18n
 
-The reference uses simple `lang` state + inline ternaries — replace with `react-i18next`. Language toggle in navbar. URL strategy: `/?lang=es` or path prefix `/es/`. Add `hreflang` meta tags for EN/ES SEO.
+Language toggle in navbar. Detection order: `?lang=es` querystring → localStorage → browser language. Do not use path-based routing (`/es/`) — the SPA uses scroll navigation only.
 
-### Appointment Booking
+### Booking System (3-step flow replacing Simply Schedule Appointments / WP)
 
-Frontend form (name, email, phone, service, date, time, message, language pref) POSTs to a Cloudflare Worker which sends confirmation email via Gmail API to both the client and `info@digitsfinancial.tax`.
+**Frontend** (`src/sections/BookingModal.tsx` or `BookingPage.tsx`):
+- Step 1: Agent selection — cards grouped by `agent_group`, fetched from `GET /api/booking/agents`
+- Step 2: Calendar — month view with available dates from `GET /api/booking/availability`, then time slots from `GET /api/booking/slots`
+- Step 3: Contact form (firstName, lastName, email, phone, address, city, state, zip, notes) + Turnstile widget
+
+**Backend** (`functions/api/booking/`):
+- `agents.ts` — `GET /api/booking/agents`
+- `availability.ts` — `GET /api/booking/availability?agent_id=&year=&month=`
+- `slots.ts` — `GET /api/booking/slots?agent_id=&date=` (working hours minus booked minus blackouts)
+- `submit.ts` — `POST /api/booking/submit` (verify Turnstile → race-condition check → INSERT → send emails)
+
+**Email on submit**: agent notification email with `.ics` calendar invite attachment + client confirmation. Reference send pattern: `github.com/ainglese-dev/vivcomau-demo-landing` → `worker/contact.ts`.
+
+**Slot availability logic**: agent `working_hours` JSON (`{1:["10:00","22:00"],...}` weekday→[start,end]) generates slots at `slot_duration_min` intervals, minus existing `bookings` rows for that agent+date, minus `blackouts`.
+
+### Admin Panel (`/admin`)
+
+- Route: `/admin` and `/admin/*` served by `functions/admin/[[path]].ts`
+- **Server-rendered HTML** (Pico CSS via CDN) — no React SPA, no second Vite build
+- Protected by CF Zero Trust (CF Access) at the edge — configure in CF dashboard
+- Admin API at `functions/api/admin/` — validates `Cf-Access-Jwt-Assertion` header
+- Features: booking list/filter/CSV export per agent, agent + group CRUD, blackout management, settings (slot duration, timezone, etc.)
+
+### CF Zero Trust Setup (one-time, dashboard only)
+
+1. CF Zero Trust → Access → Applications → Add → Self-hosted
+2. Domain: `dfg-demo-landing.pages.dev` (update to custom domain when live), Path: `/admin*`
+3. Policy: allow specific emails (One-time PIN identity provider — no OAuth app needed)
+
+### D1 Schema (`db/schema.sql`)
+
+Tables: `agent_groups`, `agents` (with `working_hours` JSON + `notify_email`), `blackouts`, `bookings`, `settings`.
+Apply: `wrangler d1 execute dfg-booking --file=db/schema.sql`
+Local: `wrangler d1 execute dfg-booking --local --file=db/schema.sql`
+
+### Appointment Booking (legacy note)
+
+`src/sections/Appointment.tsx` and `functions/api/appointments.ts` are stubs — **replace** with the booking system above. Do not extend the stub.
 
 ### Theme & Branding
 
